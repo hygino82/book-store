@@ -34,7 +34,7 @@ public class PublisherModel implements Serializable {
     private UUID id;
 
     @Column(nullable = false, unique = true)
-    private String title;
+    private String name;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @OneToMany(mappedBy = "publisher", fetch = FetchType.LAZY)

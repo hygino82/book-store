@@ -34,7 +34,7 @@ public class AuthorModel implements Serializable {
     private UUID id;
 
     @Column(nullable = false, unique = true)
-    private String title;
+    private String name;
 
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @ManyToMany(mappedBy = "authors", fetch = FetchType.LAZY)

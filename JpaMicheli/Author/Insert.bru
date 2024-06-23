@@ -1,0 +1,17 @@
+meta {
+  name: Insert
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/author
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Gorete Medeiros"
+  }
+}
