@@ -1,0 +1,22 @@
+meta {
+  name: Insert
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/book
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title": "Nuvem Boba",
+    "publisherId": "6a3722f7-8a67-4d1b-bc6f-a2cc52bbf332",
+    "reviewComment": "O peixe disse que era só uma nuvem boba",
+    "authorsId": [
+      "49e22ac6-4214-4dd1-a18e-9503566b1405"
+    ]
+  }
+}
